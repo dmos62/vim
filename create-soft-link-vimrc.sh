@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -s .vimrc ~/.vimrc
+ln -s ~/.vim/.vimrc ~/.vimrc
