@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/var/aegir/.vim/bundle'
+let g:netrw_dirhist_2='/var/aegir/.vim/bundle/vim-indent-guides'
+let g:netrw_dirhist_3='/var/aegir/.vim/bundle/vim-indent-guides/doc'
+let g:netrw_dirhist_4='/var/aegir/platforms/rene3/sites/all/themes/thomas'
+let g:netrw_dirhist_5='/var/aegir/platforms/rene3/sites/all/themes/thomas/templates'
+let g:netrw_dirhist_6='/var/aegir/platforms/rene3/sites/all/themes/thomas'
+let g:netrw_dirhist_7='/var/aegir/platforms/rene3/sites/all/themes/thomas/templates'
