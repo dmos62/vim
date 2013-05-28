@@ -1,8 +1,9 @@
-call pathogen#infect()
+execute pathogen#infect()
 Helptags
 "wildmenu = : komandu pabaigimas
 set wildmenu
 syntax on
+filetype plugin indent on
 
 "kad veiktu 256 spalvos
 let &t_Co=256
