@@ -1,6 +1,7 @@
 execute pathogen#infect()
 Helptags
-"wildmenu = : komandu pabaigimas
+runtime! plugin/sensible.vim
+
 set wildmenu
 syntax on
 filetype plugin indent on
