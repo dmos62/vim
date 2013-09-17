@@ -1,3 +1,4 @@
 #!/bin/bash
 
-cp -al ~/vim/* ~/.vim && rm -rf ~/vim
+mkdir ~/.vim
+cp -al ~/vim/. ~/.vim && rm -rf ~/vim
