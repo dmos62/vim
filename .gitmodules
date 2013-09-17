@@ -7,3 +7,6 @@
 [submodule "bundle/vim-sensible"]
 	path = bundle/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
+[submodule "dircolors-solorized"]
+	path = dircolors-solorized
+	url = https://github.com/seebi/dircolors-solorized.git
