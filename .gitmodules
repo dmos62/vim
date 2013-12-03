@@ -7,3 +7,9 @@
 [submodule "dircolors-solorized"]
 	path = dircolors-solorized
 	url = https://github.com/seebi/dircolors-solorized.git
+[submodule "bundle/vim-soy"]
+        path = bundle/vim-soy
+        url = https://github.com/duganchen/vim-soy.git
+[submodule "bundle/vim-scala"]
+        path = bundle/vim-scala
+        url = https://github.com/derekwyatt/vim-scala.git
