@@ -65,3 +65,8 @@ augroup scala_fixai
   autocmd!
   autocmd FileType scala set fo-=t fo-=r
 augroup END
+
+colorscheme darkblue
+
+" fzf : https://github.com/junegunn/fzf
+set rtp+=~/.fzf
