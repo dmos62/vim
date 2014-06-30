@@ -22,3 +22,12 @@
 [submodule "bundle/HiLinkTrace"]
 	path = bundle/HiLinkTrace
 	url = https://github.com/gerw/vim-HiLinkTrace
+[submodule "bundle/tslime2"]
+	path = bundle/tslime2
+	url = https://github.com/sjl/tslime2.vim
+[submodule "bundle/timl"]
+	path = bundle/timl
+	url = https://github.com/tpope/timl
+[submodule "bundle/TextObjectify"]
+	path = bundle/TextObjectify
+	url = https://github.com/paradigm/TextObjectify
