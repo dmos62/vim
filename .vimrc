@@ -99,3 +99,14 @@ let g:textobjectify = {
       \"\<cr>": {'left': '\%^', 'right': '\%$', 'same': 0, 'seek': 0, 
       \'line': 0},
       \}
+
+let g:clojure_align_multiline_strings = 1
+
+let g:clojure_fuzzy_indent = 0
+let g:clojure_fuzzy_indent_patterns = ['^with', '^def', '^let']
+let g:clojure_fuzzy_indent_blacklist = ['-fn$', '\v^with-%(meta|out-str|loading-context)$']
+
+set breakindent briopt=shift:1
+
+" Kad paspaudus shift-k neismestu is vimo
+noremap K <NOP>
