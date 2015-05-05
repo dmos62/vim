@@ -5,6 +5,7 @@ hi clear
 let colors_name = "volvo"
 
 hi Normal       ctermfg=247   ctermbg=233
+hi TabLine      cterm=NONE   
 hi TabLineSel   cterm=NONE   
 hi Statement    ctermfg=180
 hi Identifier   ctermfg=117 cterm=NONE

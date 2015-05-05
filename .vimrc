@@ -32,9 +32,7 @@ set softtabstop=2
 set encoding=utf-8
 set fileencoding=utf-8
 
-let g:EclimScalaValidate = 0
 map <F1> <Esc>:w<CR>
-map <F2> <Esc>:w<CR>:Validate<CR>
 map <F4> <Esc>:tabnew<CR>
 nmap <F9> <Esc>:source ~/.vimrc<CR>
 nmap <F10> <Esc>:tabnew ~/.vimrc<CR>
@@ -100,13 +98,21 @@ let g:textobjectify = {
       \'line': 0},
       \}
 
-let g:clojure_align_multiline_strings = 1
+" let g:clojure_align_multiline_strings = 1
 
-let g:clojure_fuzzy_indent = 0
-let g:clojure_fuzzy_indent_patterns = ['^with', '^def', '^let']
-let g:clojure_fuzzy_indent_blacklist = ['-fn$', '\v^with-%(meta|out-str|loading-context)$']
+" let g:clojure_fuzzy_indent = 0
+" let g:clojure_fuzzy_indent_patterns = ['^with', '^def', '^let']
+" let g:clojure_fuzzy_indent_blacklist = ['-fn$', '\v^with-%(meta|out-str|loading-context)$']
 
 set breakindent briopt=shift:1
 
 " Kad paspaudus shift-k neismestu is vimo
 noremap K <NOP>
+
+" bundle/buffer-persist
+" jeigu pradeta sesija issaugo buferius.
+" uzsikraunant jei randa buffer faila uzkrauna issaugotus buferius
+let g:BufferFile = ".buffers.vim"
+command StartSession call StartBufferPersistSession()
+
+au BufRead,BufNewFile *.cljc setfiletype clojure
