@@ -27,11 +27,18 @@ function StartBufferPersistSession()
   augroup END
 endfunction
 
+function s:strempty(str)
+  return strlen(a:str) == 0
+endfunction
+
 function s:tryContinueSession()
   if filereadable(g:BufferFile)
-    for name in readfile(g:BufferFile)
-      execute 'badd ' . resolve(name)
-    endfor
+    let BufferFileLines = readfile(g:BufferFile)
+    if !s:strempty(get(BufferFileLines, 0))
+      for name in BufferFileLines
+        execute 'badd ' . resolve(name)
+      endfor
+    endif
     call StartBufferPersistSession()
   endif
 endfunction
