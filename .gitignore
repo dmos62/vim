@@ -1,4 +1,2 @@
 *.swp
-eclim/
-plugin/eclim.vim
-..*
+/bundle/
