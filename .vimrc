@@ -1,6 +1,14 @@
-execute pathogen#infect()
-Helptags
-runtime! plugin/sensible.vim
+call plug#begin()
+Plug 'https://github.com/dmos62/vim-buffer-persist'
+Plug 'https://github.com/ervandew/supertab'
+Plug 'https://github.com/paradigm/TextObjectify'
+Plug 'https://github.com/tpope/vim-vinegar'
+Plug 'https://github.com/tpope/vim-sensible'
+Plug 'https://github.com/wilywampa/vim-ipython'
+Plug 'https://github.com/derekwyatt/vim-scala'
+Plug 'https://github.com/NLKNguyen/papercolor-theme' "PaperColor sviesi tema"
+", { 'on': 'IPython' }
+call plug#end()
 
 set wildmenu
 syntax on
@@ -109,3 +117,10 @@ let g:BufferFile = ".buffers.vim"
 command StartSession call StartBufferPersistSession()
 
 au BufRead,BufNewFile *.cljc setfiletype clojure
+
+set modeline
+color evening
+
+" sutrumpinimai
+iab abdate <c-r>=strftime("%y-%m-%d")<cr>
+iab abtime <c-r>=strftime("%R")<cr>
